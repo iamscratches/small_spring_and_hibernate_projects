@@ -23,3 +23,9 @@ public class HomeController {
  * 	create controller method to process HTML form
  * 	develop view page for confirmation
  */
+/*Development process: Add validation rule to customer class
+ * Add validation rule to customer class
+ * Display error message on HTML form
+ * Perform validation in controller class
+ * Update conformation page
+ */

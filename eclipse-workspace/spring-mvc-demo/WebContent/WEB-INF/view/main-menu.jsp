@@ -5,6 +5,7 @@
 		<hr>
 		<a href="hello/showForm">Hello world form</a>
 		<a href="showForm">Hello world form 2</a>
-		<a href="student/showForm">Hello student form</a>
+		<a href="student/showForm">student form</a>
+		<a href="customer/showForm">customer form</a>
 	</body>
 </html>

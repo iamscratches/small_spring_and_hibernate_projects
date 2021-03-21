@@ -44,6 +44,7 @@
 			
 			<input type = "submit" value="Submit"/>
 		</form:form>
+		<a href="../">back</a>
 	</body>
 	
 </html>
