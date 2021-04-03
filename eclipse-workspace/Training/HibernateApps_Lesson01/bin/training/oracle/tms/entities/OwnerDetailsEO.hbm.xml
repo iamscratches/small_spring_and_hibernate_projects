@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 15, 2021 3:19:41 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="training.oracle.tms.entities.OwnerDetailsEO" table="TM_OWNERDETAILS">
+        <id name="ownerID" type="java.lang.Integer">
+            <column name="OWNER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="fName" type="java.lang.String">
+            <column name="FNAME" />
+        </property>
+        <property name="lName" type="java.lang.String">
+            <column name="LNAME" />
+        </property>
+        <property name="landlineNo" type="java.lang.String">
+            <column name="LANDLINE_NO" />
+        </property>
+        <property name="mobileNo" type="java.lang.String">
+            <column name="MOBILE_NO" />
+        </property>
+        <property name="tempAddress" type="java.lang.String">
+            <column name="TEMP_ADDR" />
+        </property>
+        <property name="permAddress" type="java.lang.String">
+            <column name="PERM_ADDR" />
+        </property>
+        <property name="dOB" type="java.sql.Date">
+            <column name="DATEOFBIRTH" />
+        </property>
+        <property name="pincode" type="java.lang.Integer">
+            <column name="PINCODE" />
+        </property>
+        <property name="panCardNo" type="java.lang.String">
+            <column name="PANCARD_NO" />
+        </property>
+        <property name="occupation" type="java.lang.String">
+            <column name="OCCUPATION" />
+        </property>
+        <property name="addProofName" type="java.lang.String">
+            <column name="ADD_PROOF_NAME" />
+        </property>
+        <property name="gender" type="java.lang.Character">
+            <column name="GENDER" />
+        </property>
+    </class>
+</hibernate-mapping>

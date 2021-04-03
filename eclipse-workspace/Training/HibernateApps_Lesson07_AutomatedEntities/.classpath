@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HibernateJarz"/>
+	<classpathentry kind="lib" path="E:/training/hibernate-release-5.4.25.Final/lib/optional/ehcache/ehcache-2.10.6.jar"/>
+	<classpathentry kind="lib" path="E:/training/hibernate-release-5.4.25.Final/lib/optional/ehcache/hibernate-ehcache-5.4.25.Final.jar"/>
+	<classpathentry kind="lib" path="E:/training/hibernate-release-5.4.25.Final/lib/optional/ehcache/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

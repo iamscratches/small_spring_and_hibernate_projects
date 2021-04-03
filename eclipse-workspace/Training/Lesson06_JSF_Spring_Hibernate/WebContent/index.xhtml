@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<center>
+		<h2>Please Enter Offence Data</h2>
+	<h:form>
+		<table>
+			<tr> 
+				<td> Offence ID </td>
+				<td> <h:inputText value="#{offenceVORef.offenceID}" /></td> 
+			</tr>
+			<tr> 
+				<td> Offence Type </td>
+				<td> <h:inputText value="#{offenceVORef.offenceType}" /></td> 
+			</tr>
+			<tr> 
+				<td> Penalty </td>
+				<td> <h:inputText value="#{offenceVORef.penalty}" /></td> 
+			</tr>
+			<tr> 
+				<td> Vehicle Type</td>
+				<td> <h:inputText value="#{offenceVORef.vehType}" /></td> 
+			</tr>
+			<tr> 
+				<td> <h:commandButton value="Submit" action="#{offenceVORef.navigate}" /></td> 
+			</tr>	
+		
+		</table>
+		</h:form>
+	</center>
+
+</body> 
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 1. Register business classes -->
+	
+	<bean id="customerBean" class="training.oracle.business.impl.Customer" 
+		  scope="singleton">	  
+		<property name="id" value="1001"/>
+		<property name="name" value="Rahul"/>
+		<property name="address" value="Bangalore"/>
+		<property name="phone" value="1212121212"/> 
+	</bean> 
+	
+	<bean id="currencyConverterBean" 
+		  class="training.oracle.business.impl.CurrencyConverterImpl" 
+		  scope="singleton"> 
+		  <!--  Its Going to Call Setter Methods -->
+		  <property name="customerRef" ref="customerBean" />
+	</bean>
+	
+	<!-- 2. Register advices -->
+	<bean id="logBefAdvice" class="training.oracle.business.aop.LoggingBeforeAdvice"/>
+	<bean id="logAftAdvice" class="training.oracle.business.aop.LoggingAfterAdvice"/>
+	
+	<!-- 3. Integrating Services with Business Logic -->
+	<bean id="ccBean" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<!-- Propert to represent business interface -->
+		<property name="proxyInterfaces"
+				value="training.oracle.business.CurrencyConverter"/>
+		<!-- Property to register the advices -->
+		<property name="interceptorNames">
+			<list>
+				<value>logBefAdvice</value>
+				<value>logAftAdvice</value>
+			</list>
+		</property>
+		<!-- Property to register the business class -->
+		<property name="target">
+			<ref bean="currencyConverterBean"/>
+		</property>		
+	</bean> 
+	
+</beans>
