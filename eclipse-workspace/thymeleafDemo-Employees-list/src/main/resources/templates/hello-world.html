@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Hello World App</title>
+		<!-- reference CSS file -->
+		<link rel="stylesheet" th:href="@{/css/demo.css}"/>
+	</head>
+	<body>
+		<p th:text="'Time on the server is ' + ${Date}" class="funny"/>
+		<p class="funny">The time on the server is <span class="bold" th:text="${Date}"/></p>
+	</body>
+</html>
